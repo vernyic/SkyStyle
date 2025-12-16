@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyStyle — Магазин</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">SkyStyle</div>
+  <nav class="nav">
+    <a href="index.html" data-lang="home">Главная</a>
+    <a href="shop.html" data-lang="shop">Магазин</a>
+    <a href="about.html" data-lang="about">О нас</a>
+    <a href="delivery.html" data-lang="delivery">Доставка</a>
+    <a href="contacts.html" data-lang="contacts">Контакты</a>
+    <a href="cart.html">🛒</a>
+  </nav>
+  <div class="lang-selector">
+    <button data-lang-btn="ru">RU</button>
+    <button data-lang-btn="kz">KZ</button>
+    <button data-lang-btn="en">EN</button>
+  </div>
+</header>
+
+<section class="products">
+  <!-- Пример трех футболок с внешними ссылками -->
+  <div class="product fade-in">
+    <img src="https://i.ibb.co.com/qYG9XyJm/IMG-20251217-025421.jpg" alt="qyzyl style">
+    <h3>qyzyl style</h3>
+    <p>15000 ₸</p>
+    <button onclick="buyAnimation(this,'qyzyl style',15000)">В корзину</button>
+  </div>
+  <div class="product fade-in">
+    <img src="https://i.ibb.co.com/ccLBVDcZ/85310493818910.jpg" alt="stryx qara">
+    <h3>stryx qara</h3>
+    <p>15000 ₸</p>
+    <button onclick="buyAnimation(this,'stryx qara',15000)">В корзину</button>
+  </div>
+  <div class="product fade-in">
+    <img src="https://i.ibb.co.com/tf4BbBT/loue3tgpq66wfyiryokyjak2z2b9boks.webp" alt="volchock">
+    <h3>volchock</h3>
+    <p>13500 ₸</p>
+    <button onclick="buyAnimation(this,'volchock',13500)">В корзину</button>
+  </div>
+</section>
+
+<footer class="footer">© 2025 SkyStyle</footer>
+<button id="toTop" onclick="scrollTopFn()">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
